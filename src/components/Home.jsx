@@ -317,18 +317,22 @@ const Home = () => {
           style={{
             display: "grid",
             gap: "16px",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(3, 1fr)",
           }}
         >
           {genreMatches.map((match, index) => (
             <div
               key={index}
               style={{
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                overflow: "hidden",
-                padding: "16px",
-              }}
+              border: "1px solid #ccc",
+              borderRadius: "8px",
+              overflow: "hidden",
+              padding: "16px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center", 
+              textAlign: "center", 
+            }}
             >
               <div style={{ display: "flex", gap: "16px" }}>
                 {match.albumCover && (

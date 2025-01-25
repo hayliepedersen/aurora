@@ -51,6 +51,7 @@ body {
   right: 10px;
   border-radius: 4px;
   padding: 0.6em 0.6em;
+  align-items: center;
 }
 
 .square {
@@ -159,4 +160,56 @@ hr.rounded {
   margin-top: -2px;
   background-color: #1DB954;
   box-sizing: content-box;
+}
+
+.legal-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.legal-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  max-height: 70%;
+  overflow-y: auto;
+  position: relative;
+  cursor: default;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.legal-content {
+  color: black;
+  text-align: left;
+}
+
+.legal-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px; 
 }
