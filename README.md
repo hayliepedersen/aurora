@@ -1,7 +1,7 @@
 # Aurora
 
 ## About 
-Aurora is a web application that leverages the React library to interact with and display data from Spotify's API. The app aims to enhance user experience by recommending playlists based on the user's mood and preferred music genres.
+Aurora (previously soundwrap) is a web application that leverages the React library to interact with and display data from Spotify's API. The app aims to enhance user experience by recommending playlists based on the user's mood and preferred music genres.
 
 ## Features
 **Playlist Reccomendation**: Users can input a genre and discover which of their playlists contains the most songs from that genre.
