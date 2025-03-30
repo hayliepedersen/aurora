@@ -5,15 +5,19 @@
 <img width="1400" alt="Artist Recomendation Page" src="https://github.com/user-attachments/assets/112c7fb0-4b50-41ec-81e2-834218a15289" />
 
 ## Inspiration
-If you're anything like me, you might make a lot of playlists-so many that you can't even keep track of them. I often found myself endlessly scrolling through my 20+ playlists on Spotify, so I thought: why not build something to decide for me? Aurora does just that, allowing users to get personalized playlist recommendations based on a specific genre they input.
+If you're anything like me, you might make a lot of playlists-so many that you can't even keep track of them. I often found myself endlessly scrolling through my 20+ playlists on Spotify searching for the right one, so I thought: why not build something to decide for me? Aurora does just that, allowing users to get personalized playlist recommendations based on a specific genre they input.
 
-## How It Works
-**Aurora** leverages the React library to interact with and display data from Spotify's API. Once authenticated, users can input genres or specific artists, and the app dynamically retrieves and processes data from Spotify’s endpoints to recommend playlists tailored to the user's preferences.
+## What It Does
+**Aurora** leverages the React library to interact with and display data from Spotify's API. Once authenticated, users can input genres or specific artists, and the app dynamically retrieves and processes data from Spotify’s API endpoints to recommend playlists tailored to the user's preferences.
 
 ## Challenges
 One of the biggest challenges was getting the app approved for Spotify's quota extension, which was officially granted on January 25th, 2025 🎉. The structuring of Spotify's API presented another hurdle as not all endpoints provided the specific data I needed. To work around this, I had to combine and process data from multiple endpoints to get the desired results, which was in fact rewarding in the end. 
 
 Another challenge was Spotify's API rate limits, which restrict the number of calls an app can make within a 30-second window. To address this, I implemented batch processing techniques, reducing the number of API calls and preventing rate limiting. Additionally, I added a backoff-retry strategy to handle instances where rate limits were approached, ensuring the app remained responsive and within Spotify's usage policies.
+
+## Accomplishments
+
+A huge accomplishment was getting the quota extension approved after several applications. Before that, I had to manually add each user to my Spotify Developer dashboard for them to be able to authenticate with the app. Now, anyone can log in and try Aurora out themselves!! I’m also proud of figuring out how to retrieve genre information for songs, even though Spotify doesn’t provide a direct endpoint for that. It took some creative workarounds, but I was able to piece together the data I needed to make the recommendations more accurate and personalized.
 
 ## What's Next
 
